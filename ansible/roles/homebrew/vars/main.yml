@@ -1,0 +1,11 @@
+packages:
+  - zsh
+  - zsh-syntax-highlighting
+  - git
+  - git-lfs
+  - rbenv
+  - ruby-build
+  - shellcheck
+  - tree
+  - jq
+  - mas

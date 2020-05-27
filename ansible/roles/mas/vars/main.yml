@@ -1,0 +1,4 @@
+apps:
+  - { name: "Xcode", id: 497799835 }
+  - { name: "TweetDeck", id: 485812721 }
+  - { name: "Tweetbot 3", id: 1384080005 }

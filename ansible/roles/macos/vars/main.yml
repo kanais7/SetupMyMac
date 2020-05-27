@@ -1,0 +1,57 @@
+common:
+  - { domain: com.apple.AppleMultitouchTrackpad, key: Clicking, type: bool, value: true }
+  - { domain: com.apple.desktopservices, key: DSDontWriteNetworkStores, type: bool, value: true }
+  - { domain: com.apple.desktopservices, key: DSDontWriteUSBStores, type: bool, value: true }
+
+common_ui:
+  - { domain: com.apple.menuextra.battery, key: ShowPercent, type: string, value: "YES" }
+  - { domain: com.apple.menuextra.clock, key: DateFormat, type: string, value: "M\\U6708d\\U65e5(EEE)  H:mm" }  # 毎回 changed になる
+  - { domain: com.apple.screencapture, key: disable-shadow, type: bool, value: true }
+  - { domain: com.apple.systemuiserver, key: NSStatusItem Visible com.apple.menuextra.bluetooth, type: bool, value: true }
+  - { domain: com.apple.systemuiserver, key: NSStatusItem Visible com.apple.menuextra.volume, type: bool, value: true }
+  - { domain: com.apple.systemuiserver, key: menuExtras, type: array, value:  # 毎回 changed になる
+      [
+        "/System/Library/CoreServices/Menu Extras/Clock.menu",
+        "/System/Library/CoreServices/Menu Extras/Battery.menu",
+        "/System/Library/CoreServices/Menu Extras/AirPort.menu",
+        "/System/Library/CoreServices/Menu Extras/Displays.menu",
+        "/System/Library/CoreServices/Menu Extras/Volume.menu",
+        "/System/Library/CoreServices/Menu Extras/Bluetooth.menu"
+      ]
+    }
+
+finder:
+  - { key: NewWindowTarget, type: string, value: "PfHm" }
+  - { key: NewWindowTargetPath, type: string, value: "file://Users/kanais/" }
+  - { key: ShowStatusBar, type: bool, value: true }
+  - { key: ShowPathbar, type: bool, value: true }
+  - { key: FXEnableExtensionChangeWarning, type: bool, value: false }
+  - { key: FXDefaultSearchScope, type: string, value: SCcf }
+
+dock:
+  - { key: autohide, type: bool, value: true }
+  - { key: tilesize, type: float, value: 45 }
+  - { key: persistent-apps, type: array, value: 
+      [
+        "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/System/Applications/Launchpad.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>",
+        "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Google Chrome.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>",
+        "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Slack.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>",
+        "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Discord.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>",
+        "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/TweetDeck.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>",
+        "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Tweetbot.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>",
+        "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Fork.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>",
+        "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Unity Hub.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>",
+        "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Rider.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>",
+        "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Visual Studio Code.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>",
+        "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Xcode.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>",
+        "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/System/Applications/Music.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>",
+        "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/System/Applications/App Store.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>",
+        "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/iTerm.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>",
+        "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/System/Applications/Utilities/Activity Monitor.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>",
+      ]
+    }
+
+NSGlobalDomain:
+  - { key: InitialKeyRepeat, type: int, value: 15 }
+  - { key: KeyRepeat, type: int, value: 2 }
+  - { key: AppleShowAllExtensions, type: bool, value: true }

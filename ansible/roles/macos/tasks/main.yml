@@ -1,0 +1,41 @@
+- name: set common
+  osx_defaults:
+    domain: "{{ item.domain }}"
+    key: "{{ item.key }}"
+    type: "{{ item.type }}"
+    value: "{{ item.value }}"
+  with_items: "{{ common }}"
+
+- name: set common ui
+  osx_defaults:
+    domain: "{{ item.domain }}"
+    key: "{{ item.key }}"
+    type: "{{ item.type }}"
+    value: "{{ item.value }}"
+  with_items: "{{ common_ui }}"
+  notify: restart SystemUIServer
+
+- name: set dock
+  osx_defaults:
+    domain: "com.apple.dock"
+    key: "{{ item.key }}"
+    type: "{{ item.type }}"
+    value: "{{ item.value }}"
+  with_items: "{{ dock }}"
+  notify: restart Dock
+
+- name: set finder
+  osx_defaults:
+    domain: "com.apple.finder"
+    key: "{{ item.key }}"
+    type: "{{ item.type }}"
+    value: "{{ item.value }}"
+  with_items: "{{ finder }}"
+  notify: restart Finder
+
+- name: set NSGlobalDomain
+  osx_defaults:
+    key: "{{ item.key }}"
+    type: "{{ item.type }}"
+    value: "{{ item.value }}"
+  with_items: "{{ NSGlobalDomain }}"

@@ -1,0 +1,8 @@
+- name: restart Dock
+  shell: "killall Dock"
+
+- name: restart Finder
+  shell: "killall Finder"
+
+- name: restart SystemUIServer
+  shell: "killall SystemUIServer"

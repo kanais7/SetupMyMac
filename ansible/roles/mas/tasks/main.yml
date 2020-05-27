@@ -1,0 +1,10 @@
+- name: mas get installed list
+  command: mas list
+  register: mas_installed_list
+  changed_when: False
+  check_mode: no
+
+- name: mas install items
+  command: "mas install {{ item.id }}"
+  when: (item.id | string) not in mas_installed_list.stdout
+  with_items: "{{ apps }}"

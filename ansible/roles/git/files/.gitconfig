@@ -1,0 +1,69 @@
+[alias]
+    co = checkout
+    ci = commit
+    lsf = ls-files
+    br = branch
+    mg = merge
+    alias = "!f(){ git config --get-regexp ^alias\\. | cut -c7- | sort -k ${1:-1} | perl -lne 'my @fields = split(/ /,$_,2); printf(\"%-10s %s\\n\", @fields[0], @fields[1]);' | less -E;};f"
+    #review = push origin @:refs/for/master
+    ft = fetch
+    pr = pull --rebase
+    cam = commit --amend --no-edit
+    came = commit --amend
+    dif = diff
+    difw = diff --color-words
+    difs = diff --staged
+    difws = diff --staged --color-words
+    difsw = diff --staged --color-words
+    ad = add
+    ada = add -A
+    rh = reset --hard
+    rs = reset --soft
+    r = reset
+    undo = reset --soft @~
+    cancel = reset @~
+    cp = cherry-pick
+    cpcnt = cherry-pick --continue
+    cpcont = cherry-pick --continue
+    cpqit = cherry-pick --quit
+    cpquit = cherry-pick --quit
+    cpabt = cherry-pick --abort
+    cpabort = cherry-pick --abort
+    rb = rebase
+    rbonto = rebase --onto
+    rbcnt = rebase --continue
+    rbcont = rebase --continue
+    rbskp = rebase --skip
+    rbskip = rebase --skip
+    rbabt = rebase --abort
+    rbabort = rebase --abort
+    rbi = rebase -i
+    rbin = "!f(){ git rebase -i @~${1:-1};};f"
+    rbi1 = rebase -i @~
+    rbi2 = rebase -i @~2
+    rbi3 = rebase -i @~3
+    rbi4 = rebase -i @~4
+    rbi5 = rebase -i @~5
+    rbi6 = rebase -i @~6
+    rbi7 = rebase -i @~7
+    rbi8 = rebase -i @~8
+    rbi9 = rebase -i @~9
+    rbi10 = rebase -i @~10
+    asmd = !git ls-files -v | grep '^[a-z]'
+    skpd = !git ls-files -v | grep '^S'
+    current-br = rev-parse --abbrev-ref @
+    fixup = "!f(){ git reset --soft ${1} && git commit --amend --no-edit;};f"
+    squash = "!f(){ git reset --soft ${1} && git commit --amend;};f"
+    stf = "!git status -s 2>/dev/null | cut -c4-"
+    st = "!f(){ git -c color.status=always status -sb 2>/dev/null | nl -w2 -s' ' -bp'^[^#]*$' | sed -e '1s/^ *//';};f"
+    stn = "!f(){ git status -s 2>/dev/null | cut -c4- | head -n ${1} | tail -n 1;};f"
+    adn = "!f(){ git stn ${1} | xargs git add;};f"
+    con = "!f(){ git stn ${1} | xargs git checkout;};f"
+    rn = "!f(){ git stn ${1} | xargs git reset;};f"
+[user]
+	name = kanais7
+	email = kanais0620@gmail.com
+[rebase]
+	autosquash = true
+[core]
+	excludesfile = /Users/kanais/.gitignore_global
