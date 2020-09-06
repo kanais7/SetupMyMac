@@ -1,0 +1,4 @@
+- name: bundler install
+  gem:
+    name: "{{ item }}"
+  with_items: "{{ packages }}"
