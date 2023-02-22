@@ -1,13 +1,18 @@
 packages:
   - karabiner-elements
-  - google-chrome
+  # - google-chrome
   - visual-studio-code
-  - rider
+  # - rider
+  - jetbrains-toolbox
   - iterm2
   - fork
-  - unity-hub
+  # - unity-hub
   - dotnet-sdk
   - docker
   - slack
   # - discord
   # - steam
+  - notion
+  - cyberduck
+  - charles
+
