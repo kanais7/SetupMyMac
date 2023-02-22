@@ -9,5 +9,5 @@ packages:
   - dotnet-sdk
   - docker
   - slack
-  - discord
-  - steam
+  # - discord
+  # - steam

@@ -1,5 +1,5 @@
 packages:
-  - zsh
+  # - zsh
   - zsh-syntax-highlighting
   - git
   - git-lfs
@@ -8,4 +8,5 @@ packages:
   - shellcheck
   - tree
   - jq
-  - mas
+  - xcodes
+  # - mas
