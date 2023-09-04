@@ -3,6 +3,8 @@ packages:
   - zsh-syntax-highlighting
   - git
   - git-lfs
+  - gh
+  - svn
   - rbenv
   - ruby-build
   - shellcheck
@@ -10,3 +12,5 @@ packages:
   - jq
   - xcodes
   # - mas
+  - ffmpeg
+  - youtube-dl

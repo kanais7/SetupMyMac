@@ -5,6 +5,7 @@ packages:
   # - rider
   - jetbrains-toolbox
   - iterm2
+  - powershell
   - fork
   # - unity-hub
   - dotnet-sdk
