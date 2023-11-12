@@ -7,7 +7,7 @@
     - homebrew
     - homebrew_cask
     - gem
-    - mas
+    # - mas
     - macos
     # - ssh
     # - terminal

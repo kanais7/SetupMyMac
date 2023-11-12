@@ -1,5 +1,5 @@
 common:
-  - { domain: com.apple.AppleMultitouchTrackpad, key: Clicking, type: bool, value: true }
+  # - { domain: com.apple.AppleMultitouchTrackpad, key: Clicking, type: bool, value: true }
   - { domain: com.apple.desktopservices, key: DSDontWriteNetworkStores, type: bool, value: true }
   - { domain: com.apple.desktopservices, key: DSDontWriteUSBStores, type: bool, value: true }
 
@@ -39,7 +39,7 @@ dock:
         "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Discord.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>",
         "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Fork.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>",
         "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Unity Hub.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>",
-        "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Rider.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>",
+        # "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Rider.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>",
         "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Visual Studio Code.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>",
         "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Xcode.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>",
         "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/System/Applications/Music.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>",
