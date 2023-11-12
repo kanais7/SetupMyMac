@@ -4,11 +4,10 @@
   gather_facts: no
   become: no
   roles:
-    # - homebrew
-    # - homebrew_cask
+    - homebrew
+    - homebrew_cask
     - gem
-    # - mas
-    # - macos
+    - mas
+    - macos
     # - ssh
     # - terminal
-    # - git
