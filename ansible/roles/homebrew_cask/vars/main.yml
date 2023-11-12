@@ -4,10 +4,12 @@ packages:
   - visual-studio-code
   - jetbrains-toolbox
   - iterm2
+  - powershell
   - fork
   - unity-hub
   - dotnet-sdk
+  - google-cloud-sdk
   - docker
   - slack
   - discord
-  - steam
+  - notion

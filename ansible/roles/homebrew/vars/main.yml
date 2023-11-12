@@ -3,9 +3,13 @@ packages:
   - zsh-syntax-highlighting
   - git
   - git-lfs
+  - gh
   - rbenv
   - ruby-build
   - shellcheck
   - tree
   - jq
   - mas
+  - mackup
+  - youtube-dl
+  - ffmpeg
