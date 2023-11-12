@@ -10,6 +10,7 @@ packages:
   - dotnet-sdk
   - google-cloud-sdk
   - docker
+  - charles
   - slack
   - discord
   - notion
