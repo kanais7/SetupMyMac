@@ -11,6 +11,7 @@ packages:
   - google-cloud-sdk
   - docker
   - charles
+  - android-platform-tools
   - slack
   - discord
   - notion
